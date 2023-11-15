@@ -4,6 +4,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
+    <header>
     <nav className='flex justify-around items-center h-16'>
         <h1>AdityaGupta_.</h1>
         <ul className='flex justify-evenly w-[400px]'>
@@ -14,6 +15,7 @@ const Navbar = () => {
         </ul>
         <button>Resume</button>
     </nav>
+    </header>
   )
 }
 

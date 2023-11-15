@@ -16,7 +16,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='bg-[#525E75] text-white'>{children}</body>
+      <body className='bg-[_linear-gradient(90deg,_rgba(22,22,26,1)_0%,_rgba(22,22,29,1)_50%,_rgba(22,22,26,1)_100%)]
+ text-white'>{children}</body>
     </html>
   )
 }
