@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ul li:nth-child(1) .navlink::before{
+    content: "01";
+    position: absolute;
+    font-size: 10px;
+    top: 0;
+    right: 8px;
+}
+ul li:nth-child(2) .navlink::before{
+    content: "02";
+    position: absolute;
+    font-size: 10px;
+    top: 0;
+    right: 8px;
+}
+ul li:nth-child(3) .navlink::before{
+    content: "03";
+    position: absolute;
+    font-size: 10px;
+    top: 0;
+    right: 8px;
+}
+ul li:nth-child(4) .navlink::before{
+    content: "04";
+    position: absolute;
+    font-size: 10px;
+    top: 0;
+    right: 7px;
+}
