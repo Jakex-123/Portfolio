@@ -1,7 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600;800&family=Montserrat:wght@300;400;600&display=swap');
+h1{
+  font-family: 'EB Garamond','serif';
+}
+h2{
+  font-family: 'Montserrat','serif';
+}
 ul li:nth-child(1) .navlink::before{
     content: "01";
     position: absolute;
@@ -59,4 +65,72 @@ ul li:nth-child(4) .navlink::before{
       opacity: 1;
     }
   }
+
+  .about::after{
+    content: "";
+    position: relative;
+    display: block;
+    width: 40px;
+    margin: 10px auto;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #FFF;
+  }
+
+  .mouse {
+    width: 30px;
+    height: 55px;
+    border: 3px solid #FFF;
+    border-radius: 60px;
+    margin: 70px auto 0px auto;
+    position: relative;
+  }
+  .mouse::before {
+      content: '';
+      width: 12px;
+      height: 12px;
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #FFF;
+      border-radius: 50%;
+      opacity: 1;
+      animation: wheel 2s infinite;
+      -webkit-animation: wheel 2s infinite;
+    }
   
+  @keyframes wheel {
+    to {
+      opacity: 0;
+      top: 30px;
+    }
+  }
+  
+  @-webkit-keyframes wheel {
+    to {
+      opacity: 0;
+      top: 30px;
+    }
+  }
+  
+  .scroll {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    position: relative;
+    animation: down 1.5s infinite;
+    -webkit-animation: down 1.5s infinite;
+  }
+  .scroll::before {
+      content: '';
+      position: absolute;
+      top: 15px;
+      left: 50%;
+      width: 18px;
+      height: 18px;
+      border-left: 2px solid #333;
+      border-bottom: 2px solid #333;
+      transform: rotate(-45deg);
+  }
