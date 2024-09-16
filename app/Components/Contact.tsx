@@ -124,7 +124,7 @@ const Contact = () => {
         </button>
       </form>
       <hr className="mt-16 md:mt-20 mb-8 lg:mb-16" />
-      <div className="flex flex-col justify-center gap-5 md:flex-row md:justify-between items-center">
+      <footer className="flex flex-col justify-center gap-5 md:flex-row md:justify-between items-center">
         <div className="w-full md:w-1/3 shadow-custom-shadow">
           <Image
             className="mx-auto md:mx-0"
@@ -135,7 +135,7 @@ const Contact = () => {
             alt="logo"
           />
         </div>
-        <p className="w-full md:w-1/3 text-sm order-2 md:order-none text-center">
+        <p className="w-full md:w-1/3 md:text-base text-sm order-2 md:order-none text-center">
           <span>&#169;</span> Copyright 2024
         </p>
         <div className="w-full md:w-1/3 flex items-center justify-center gap-4 order-1 md:order-none">
@@ -154,7 +154,7 @@ const Contact = () => {
             </button>
           </Link>
         </div>
-      </div>
+      </footer>
     </section>
   );
 };
