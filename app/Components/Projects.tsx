@@ -81,7 +81,7 @@ const Projects = () => {
                 <hr className="border-t-2 dark:border-white/5 border-lightPrimaryText/10 mt-4 md:mt-5" />
                 <ul className="h-40 font-body flex flex-col justify-between gap-2 items-start font-medium text-sm md:text-base mb-10 md:mb-0 md:mt-5">
                   {project.description.map((desc:string,index)=>{
-                    return <li key={index} className="flex items-baseline  font-body font-normal text-base dark:text-secondaryText text-lightSecondaryText align-bottom"><span className="text-xl">•</span> {desc}</li>
+                    return <li key={index} className="flex items-baseline  font-body font-normal text-base dark:text-secondaryText text-lightSecondaryText align-bottom"><span className="text-xl mr-1">•</span> {desc}</li>
                   })}
                 </ul>
                 <Link target="_blank" href={project.link}>
