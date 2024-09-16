@@ -142,7 +142,7 @@ function About() {
               My {heading}
             </h3>
             {heading === "Experience" && (
-              <div className="flex flex-grow-0 flex-wrap gap-4 overflow-y-auto mt-8">
+              <div className="flex flex-grow flex-wrap gap-4 overflow-y-auto mt-8">
                 {Array.isArray(myInformation["Experience"]) ? (
                   myInformation["Experience"].map((item, index) => (
                     <div
@@ -176,7 +176,7 @@ function About() {
                     myInformation["Skills"].map((item, index) => (
                       <div
                         key={item.name}
-                        className="skill-container z-0 w-24 h-24 relative flex items-center justify-center bg-lightblueaccent dark:bg-black !mt-8"
+                        className="skill-container w-24 h-24 relative flex items-center justify-center bg-lightblueaccent dark:bg-black !mt-8"
                       >
                         <div className="x">
                           <p className="font-body">

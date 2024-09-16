@@ -210,6 +210,7 @@ li{
   margin-inline: auto; 
   width: fit-content;
 }
+
 .dark .skill-container:hover .x{
   background-color: white;
   color: black;
@@ -259,4 +260,10 @@ li{
 
 .dm-stack-cards:nth-child(3) {
   transform: translateY(40px);
+}
+.dm-stack-cards:nth-child(4) {
+  transform: translateY(60px);
+}
+.dm-stack-cards:nth-child(5) {
+  transform: translateY(80px);
 }

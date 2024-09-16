@@ -12,51 +12,51 @@ const Projects = () => {
   const { gsap, ScrollTrigger } = useGsap(); 
 
   useEffect(() => {
-    // Set up the stack card animations
-      if (typeof window!=undefined &&  projectRef.current) {
-        gsap.registerPlugin(ScrollTrigger);
-        gsap.from(projectRef.current, {
-          scrollTrigger: {
-            trigger: projectRef.current,
-            start: "top 100%",
-            end: "top 90%",
-            toggleActions: "play none none reverse",
-            scrub:2,
-          },
-          opacity: 0,
-          y: 200,
-          duration: 2.5,
-        });
-      }
+    if (typeof window !== "undefined" && projectRef.current) {
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.from(projectRef.current, {
+        scrollTrigger: {
+          trigger: projectRef.current,
+          start: "top 100%",
+          end: "top 90%",
+          toggleActions: "play none none reverse",
+          scrub: 2,
+        },
+        opacity: 0,
+        y: 200,
+        duration: 2.5,
+      });
+    }
 
     const dmStackCards = document.querySelectorAll(".dm-stack-cards");
     const dmStackCardsLength = dmStackCards.length;
 
     dmStackCards.forEach((dmStackCard, index) => {
       const nextCard = dmStackCards[index + 1];
-      const lastCard = dmStackCards[dmStackCards.length - 1];
+      const lastCard = dmStackCards[dmStackCardsLength - 1];
 
-      if (nextCard) { // Ensure there is a nextCard before setting up the animation
+      if (nextCard) {
         const scaleOrderValue = (100 - dmStackCards.length) / 100 + ((index + 1) * 0.01);
-        const opacityOrderValue = (1 - dmStackCards.length / 10) + ((index + 1) * 0.1);
+        const opacityOrderValue = (1 - dmStackCards.length/10) + ((index + 1) * 0.1);
 
         gsap.to(dmStackCard, {
           scrollTrigger: {
             trigger: nextCard,
             endTrigger: lastCard,
-            start: `0% 50%`,
-            end: '100% 50%',
+            start: `0 50%`,
+            end: `100% 50%`,
             scrub: true,
             invalidateOnRefresh: true,
             markers: false
           },
-          scale: scaleOrderValue,
-          opacity: opacityOrderValue
+          scale: scaleOrderValue, 
+          opacity: opacityOrderValue ,
         });
       }
     });
+
     ScrollTrigger.refresh();  
-  }, [gsap,ScrollTrigger]);
+  }, [gsap, ScrollTrigger]);
 
   return (
     <section  ref={projectRef} id="projects" className="mt-16 md:mt-28 pb-16">
@@ -92,7 +92,7 @@ const Projects = () => {
               </div>
               <div>
                 <Image
-                  className={`mt-8 -mb-5 lg:mt-0 lg:mb-0 lg:absolute ${project.mobile && "w-40 -mb-24 mx-auto  lg:-right-1 lg:-bottom-10"} lg:h-full lg:w-auto lg:max-w-none`}
+                  className={`mt-8 -mb-5 lg:mt-0 lg:mb-0 lg:absolute ${project.mobile && "w-40 -mb-40 mx-auto  lg:-right-1 lg:-bottom-10"} lg:h-full lg:w-auto lg:max-w-none`}
                   src={project.image}
                   width={project.mobile?950:1920}
                   height={project.mobile?1920:1080}
