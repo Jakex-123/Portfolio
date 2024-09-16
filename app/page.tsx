@@ -1,11 +1,9 @@
 
-import dynamic from 'next/dynamic';
+import About from './Components/About'
 import Contact from './Components/Contact'
 import Hero from './Components/Hero'
 import Navbar from './Components/Navbar'
-const Projects = dynamic(() => import('./Components/Projects'), { ssr: false });
-const About = dynamic(() => import('./Components/About'), { ssr: false });
-
+import Projects from './Components/Projects'
 
 export default function Home() {
   

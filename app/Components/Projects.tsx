@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import { projects } from "../lib/myInformation";
 import { useGsap } from "@/Context/GSAPContext";
+import Link from "next/link";
 
 
 
@@ -83,9 +84,11 @@ const Projects = () => {
                     return <li key={index} className="flex items-baseline  font-body font-normal text-base dark:text-secondaryText text-lightSecondaryText align-bottom"><span className="text-xl">•</span> {desc}</li>
                   })}
                 </ul>
+                <Link target="_blank" href={project.link}>
                 <button className="font-body bg-white md:w-auto px-6 text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center mt-16 md:mt-8">
-                  {project.link} →
+                  {project.mobile?"Visit Project":"Visit Live Site →"}
                 </button>
+                </Link>
               </div>
               <div>
                 <Image

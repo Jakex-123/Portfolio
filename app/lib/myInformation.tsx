@@ -156,7 +156,7 @@ export const myInformation = {
   export const projects = [
     {
       name: "DevOverflow",
-      link: "Visit Live Site",
+      link: "https://devflow-ruby.vercel.app/",
       image: "/devflow.png",
       mobile:false,
       description:["Developed a Stack Overflow-like platform with AI-generated responses, optimized performance, and PWA support.",
@@ -165,7 +165,7 @@ export const myInformation = {
     },
     {
       name: "Scisoc",
-      link: "Visit Live Site",
+      link: "https://scisocaiims.com/",
       image: "/scisoc.png",
       mobile:false,
       description:[
@@ -176,7 +176,7 @@ export const myInformation = {
     },
     {
       name: "SkyCast",
-      link: "Visit Live Site",
+      link: "https://github.com/Jakex-123/Flutter_Weather",
       image: "/skycast.png",
       mobile:true,
       description:[
