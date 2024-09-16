@@ -79,14 +79,14 @@ function About() {
         <h2 className="section-title text-3xl font-heading font-semibold md:text-5xl text-center about dark:text-primaryText text-lightPrimaryText">
           About Me
         </h2>
-        <span className="section-title block font-body font-thin text-lg md:text-[1.5rem] text-center leading-8 max-w-7xl dark:text-primaryText text-lightPrimaryText">
+        <span className="section-title block font-body font-thin text-lg md:text-[1.5rem] text-center leading-8 max-w-7xl dark:text-secondaryText text-lightSecondaryText">
           Here you will find more information about me, what I do, and my
           current skills mostly in terms of programming and technology.
         </span>
       </div>
-      <div className="w-full flex flex-col gap-10 md:flex-row">
+      <div className="w-full flex flex-col gap-8 md:flex-row">
         <div className="md:w-[50%]" ref={knowMeRef}>
-          <h3 className="text-3xl md:text-4xl font-body font-semibold mb-7 dark:text-primaryText text-lightPrimaryText">
+          <h3 className="text-2xl md:text-4xl font-body font-semibold mb-7 dark:text-primaryText text-lightPrimaryText">
             Get to know me!
           </h3>
           <p className="text-base font-body md:text-lg dark:text-secondaryText text-lightSecondaryText">

@@ -13,7 +13,7 @@ const Hero = () => {
           </h1>
         </div>
         <div className='animate-fade-up'>
-          <h2 className='text-2xl md:text-3xl md:mt-16 font-thin font-body mt-6 leading-8 md:leading-9'>
+          <h2 className='text-2xl dark:text-secondaryText text-lightSecondaryText md:text-3xl md:mt-16 font-thin font-body mt-6 leading-8 md:leading-9'>
             I<span>&apos;</span>m a software engineer adept at frontend and app development, blending technical expertise with a keen eye for design to create engaging digital experiences.
           </h2>
         </div>
