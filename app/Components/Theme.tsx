@@ -17,8 +17,8 @@ const themes=[
 ]
 const Theme = () => {
   const { mode, setMode } = useTheme();
-  const [isOpen, setIsOpen] = useState(false);
-  const dropdownRef = useRef(null);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const dropdownRef = useRef<any>(null);
 
   // Toggle dropdown visibility
   const handleToggle = () => {
