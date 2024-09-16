@@ -7,10 +7,10 @@ import Image from "next/image";
 import { useTheme } from "@/Context/ThemeProvider";
 
 const Contact = () => {
-  const [email, setEmail] = useState('');
-  const [name, setName] = useState('');
-  const [message, setMessage] = useState('');
-  const [errors, setErrors] = useState<{ [key: string]: string }>({});
+  const [email, setEmail] = useState<string>('');
+  const [name, setName] = useState<string>('');
+  const [message, setMessage] = useState<string>('');
+  const [errors, setErrors] = useState<any>({});
 
   const contactValidationSchema = z.object({
     name: z.string().min(6, "Name must be at least 6 characters long").max(256),
