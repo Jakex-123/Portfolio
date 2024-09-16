@@ -1,20 +1,20 @@
 "use client";
-import React, { useLayoutEffect, useRef, useState } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import React, { useEffect, useRef, useState } from "react";
 import { myInformation } from "../lib/myInformation";
+import { useGsap } from "@/Context/GSAPContext";
 
-gsap.registerPlugin(ScrollTrigger);
 
 function About() {
   const [heading, setHeading] = useState("Experience");
   const experienceRef = useRef<any>([]);
   const aboutHeadingRef = useRef(null); // Ref for "About Me" heading
   const knowMeRef = useRef(null); // Ref for "Get to know me!" container
+  const { gsap, ScrollTrigger } = useGsap(); 
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     // Animate Experience cards
     experienceRef.current.forEach((card:any) => {
+      gsap.registerPlugin(ScrollTrigger);
       gsap.from(card, {
         scrollTrigger: {
           trigger: card,
@@ -30,9 +30,11 @@ function About() {
       });
     });
     
-  }, [heading]);
-  useLayoutEffect(()=>{
+  }, [heading,gsap,ScrollTrigger]);
+  useEffect(()=>{
     if (aboutHeadingRef.current) {
+      gsap.registerPlugin(ScrollTrigger);
+
       gsap.from(aboutHeadingRef.current, {
         scrollTrigger: {
           trigger: aboutHeadingRef.current,
@@ -48,7 +50,10 @@ function About() {
     }
 
     if (knowMeRef.current) {
+      gsap.registerPlugin(ScrollTrigger);
+
       gsap.from(knowMeRef.current, {
+        
         scrollTrigger: {
           trigger: knowMeRef.current,
           start: "top 80%",
@@ -60,7 +65,9 @@ function About() {
         x: -200,
         duration: 1.5,
       });
+      ScrollTrigger.refresh();
     }
+    
   },[])
 
   return (

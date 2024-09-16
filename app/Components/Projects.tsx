@@ -1,21 +1,19 @@
 "use client";
-import React, { useLayoutEffect, useRef } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import { projects } from "../lib/myInformation";
-
-// Register the ScrollTrigger plugin
-gsap.registerPlugin(ScrollTrigger);
+import { useGsap } from "@/Context/GSAPContext";
 
 
 
 const Projects = () => {
   const projectRef = useRef(null);
+  const { gsap, ScrollTrigger } = useGsap(); 
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     // Set up the stack card animations
       if (typeof window!=undefined &&  projectRef.current) {
+        gsap.registerPlugin(ScrollTrigger);
         gsap.from(projectRef.current, {
           scrollTrigger: {
             trigger: projectRef.current,
@@ -56,7 +54,8 @@ const Projects = () => {
         });
       }
     });
-  }, []);
+    ScrollTrigger.refresh();  
+  }, [gsap,ScrollTrigger]);
 
   return (
     <section  ref={projectRef} id="projects" className="mt-16 md:mt-28 pb-16">
