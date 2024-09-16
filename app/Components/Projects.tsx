@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
@@ -13,7 +13,7 @@ gsap.registerPlugin(ScrollTrigger);
 const Projects = () => {
   const projectRef = useRef(null);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     // Set up the stack card animations
       if (projectRef.current) {
         gsap.from(projectRef.current, {

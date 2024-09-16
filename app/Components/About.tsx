@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useLayoutEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { myInformation } from "../lib/myInformation";
@@ -12,7 +12,7 @@ function About() {
   const aboutHeadingRef = useRef(null); // Ref for "About Me" heading
   const knowMeRef = useRef(null); // Ref for "Get to know me!" container
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     // Animate Experience cards
     experienceRef.current.forEach((card:any) => {
       gsap.from(card, {
@@ -31,7 +31,7 @@ function About() {
     });
     
   }, [heading]);
-  useEffect(()=>{
+  useLayoutEffect(()=>{
     if (aboutHeadingRef.current) {
       gsap.from(aboutHeadingRef.current, {
         scrollTrigger: {
@@ -43,7 +43,7 @@ function About() {
         },
         opacity: 0,
         y: 200,
-        duration: 2.5,
+        duration: 1,
       });
     }
 

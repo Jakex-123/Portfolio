@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useLayoutEffect, useRef, useState } from "react";
 import { useTheme } from "@/Context/ThemeProvider";
 import Image from "next/image";
 const themes=[
@@ -26,7 +26,7 @@ const Theme = () => {
   };
 
   // Close dropdown if clicking outside of it
-  useEffect(() => {
+  useLayoutEffect(() => {
     const handleClickOutside = (event:any) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setIsOpen(false);
