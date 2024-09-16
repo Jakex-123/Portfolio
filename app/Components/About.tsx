@@ -68,7 +68,7 @@ function About() {
       ScrollTrigger.refresh();
     }
     
-  },[])
+  },[gsap,ScrollTrigger])
 
   return (
     <section
