@@ -257,7 +257,6 @@ li{
 .dm-stack-cards:nth-child(2) {
   transform: translateY(20px);
 }
-
 .dm-stack-cards:nth-child(3) {
   transform: translateY(40px);
 }

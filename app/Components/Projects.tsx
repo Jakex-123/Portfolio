@@ -92,7 +92,7 @@ const Projects = () => {
               </div>
               <div>
                 <Image
-                  className={`mt-8 -mb-5 lg:mt-0 lg:mb-0 lg:absolute ${project.mobile && "w-40 -mb-40 mx-auto  lg:-right-1 lg:-bottom-10"} lg:h-full lg:w-auto lg:max-w-none`}
+                  className={`mt-8 -mb-5 lg:mt-0 lg:mb-0 lg:absolute ${project.mobile && "w-[28%] mx-auto"} lg:-right-1 lg:-bottom-10 lg:h-full lg:w-auto lg:max-w-none`}
                   src={project.image}
                   width={project.mobile?950:1920}
                   height={project.mobile?1920:1080}

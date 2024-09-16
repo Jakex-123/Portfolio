@@ -185,5 +185,4 @@ export const myInformation = {
         "Enhanced performance and UI/UX with Flutter's rich widget set."
       ]
     },
-    
   ];
