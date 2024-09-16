@@ -15,7 +15,7 @@ const Projects = () => {
 
   useLayoutEffect(() => {
     // Set up the stack card animations
-      if (projectRef.current) {
+      if (typeof window!=undefined &&  projectRef.current) {
         gsap.from(projectRef.current, {
           scrollTrigger: {
             trigger: projectRef.current,
