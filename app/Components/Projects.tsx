@@ -59,8 +59,8 @@ const Projects = () => {
   }, []);
 
   return (
-    <section id="projects" className="mt-16 md:mt-28 pb-16">
-      <h2 ref={projectRef} className="text-3xl font-heading font-semibold md:text-5xl text-center about dark:text-primaryText text-lightPrimaryText">
+    <section  ref={projectRef} id="projects" className="mt-16 md:mt-28 pb-16">
+      <h2 className="text-3xl font-heading font-semibold md:text-5xl text-center about dark:text-primaryText text-lightPrimaryText">
         Projects
       </h2>
       <div className="mt-10 md:mt-20 flex flex-col gap-24 md:gap-16">
