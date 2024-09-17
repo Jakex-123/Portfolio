@@ -57,9 +57,8 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-      {/* Mobile menu toggle button */}
       <div className="flex gap-3 flex-row-reverse items-center">
-        <button
+        <button aria-label="navigation-drawer"
           className={`w-12 h-12 rounded-full flex items-center justify-center bg-lightSecondaryText dark:bg-stone-800 m-0 p-0 md:hidden z-20 relative ${
             open ? "text-white" : ""
           }`}

@@ -71,7 +71,7 @@ const Projects = () => {
           >
             <div
               className="absolute inset-0 -z-10 opacity-5"
-              style={{ backgroundImage: "url('/grain.jpg')" }}
+              style={{ backgroundImage: "url('/grain.webp')" }}
             ></div>
             <div className={`lg:grid lg:grid-cols-2 lg:gap-16`}>
               <div className="lg:pb-16">

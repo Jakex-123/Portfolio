@@ -142,13 +142,13 @@ const Contact = () => {
       <span>&#169;</span> Copyright 2024
     </p>
     <div className="w-full md:w-1/3 flex items-center justify-center gap-4 order-1 md:order-none">
-      <Link href={"https://www.linkedin.com/in/aditya-gupta128/"} target="_blank">
+      <Link aria-label="Linkedin" href={"https://www.linkedin.com/in/aditya-gupta128/"} target="_blank">
         <i className="fa-lg fa-brands fa-linkedin"></i>
       </Link>
-      <Link href={"https://github.com/Jakex-123"} target="_blank">
+      <Link aria-label="Github" href={"https://github.com/Jakex-123"} target="_blank">
         <i className="fa-lg fa-brands fa-github"></i>
       </Link>
-      <Link href={"https://www.instagram.com/aditya.gupta03/"} target="_blank">
+      <Link aria-label="Instagram" href={"https://www.instagram.com/aditya.gupta03/"} target="_blank">
         <i className="fa-lg fa-brands fa-instagram"></i>
       </Link>
       <Link target="_blank" href={"https://drive.google.com/file/d/1-gYPxNFrhdCqFDQQvN4J_Znwn8ZmUAZp/view?usp=drive_link"}>
