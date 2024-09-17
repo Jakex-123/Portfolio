@@ -84,6 +84,10 @@ html{
   background-color: #f54e8e;
 }
 
+h1{
+  font-display: swap;
+}
+
 ul li:nth-child(1) .navlink::before {
   content: "01";
   position: absolute;
