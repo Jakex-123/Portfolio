@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
-import { projects } from "../lib/myInformation";
+import { projects } from "../utils/myInformation";
 import { useGsap } from "@/Context/GSAPContext";
 import Link from "next/link";
 
@@ -92,7 +92,7 @@ const Projects = () => {
               </div>
               <div>
                 <Image
-                  className={`mt-8 -mb-5 lg:mt-0 lg:mb-0 lg:absolute ${project.mobile && "w-[28%] mx-auto"} lg:-right-1 lg:-bottom-10 lg:h-full lg:w-auto lg:max-w-none`}
+                  className={`mt-8 -mb-5 lg:mt-0 lg:mb-0 lg:absolute false lg:h-full lg:w-auto lg:max-w-none ${project.mobile && "w-[28%] lg:-bottom-10 lg:-right-1 lg:h-full lg:w-auto lg:max-w-none mx-auto"} `}
                   src={project.image}
                   width={project.mobile?950:1920}
                   height={project.mobile?1920:1080}

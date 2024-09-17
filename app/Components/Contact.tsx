@@ -58,7 +58,8 @@ const Contact = () => {
   const { mode } = useTheme();
 
   return (
-    <section id="contact" className="mx-auto mt-16 md:mt-28 pb-10">
+    <>
+    <section id="contact" className="mx-auto mt-24 md:mt-32 pb-10">
       <h2 className="font-heading text-3xl font-semibold md:text-5xl text-center about dark:text-primaryText text-lightPrimaryText">
         Send Me a Message!
       </h2>
@@ -123,39 +124,41 @@ const Contact = () => {
           <span className="absolute -inset-1 dark:bg-accentPurple bg-lightSecondaryText transition-transform duration-300 transform translate-x-[-100%] group-hover:translate-x-0 z-[-1]"></span>
         </button>
       </form>
-      <hr className="mt-16 md:mt-20 mb-8 lg:mb-16" />
-      <footer className="flex flex-col justify-center gap-5 md:flex-row md:justify-between items-center">
-        <div className="w-full md:w-1/3 shadow-custom-shadow">
-          <Image
-            className="mx-auto md:mx-0"
-            src={`${mode === "dark" ? "/logo.png" : "/light-logo.png"}`}
-            width={50}
-            height={50}
-            priority={true}
-            alt="logo"
-          />
-        </div>
-        <p className="w-full md:w-1/3 md:text-base text-sm order-2 md:order-none text-center">
-          <span>&#169;</span> Copyright 2024
-        </p>
-        <div className="w-full md:w-1/3 flex items-center justify-center gap-4 order-1 md:order-none">
-          <Link href={"https://www.linkedin.com/in/aditya-gupta128/"} target="_blank">
-            <i className="fa-lg fa-brands fa-linkedin"></i>
-          </Link>
-          <Link href={"https://github.com/Jakex-123"} target="_blank">
-            <i className="fa-lg fa-brands fa-github"></i>
-          </Link>
-          <Link href={"https://www.instagram.com/aditya.gupta03/"} target="_blank">
-            <i className="fa-lg fa-brands fa-instagram"></i>
-          </Link>
-          <Link target="_blank" href={"https://drive.google.com/file/d/1-gYPxNFrhdCqFDQQvN4J_Znwn8ZmUAZp/view?usp=drive_link"}>
-            <button className="px-4 h-7 border dark:border-white border-black rounded-full ">
-              Resume
-            </button>
-          </Link>
-        </div>
-      </footer>
+      <hr className="mt-16 md:mt-20" />
     </section>
+    <footer className="w-full flex flex-col justify-center gap-5 md:flex-row md:justify-between items-center mb-10">
+
+    <div className=" md:w-1/3 shadow-custom-shadow">
+      <Image
+        className="mx-auto md:mx-0"
+        src={`${mode === "dark" ? "/logo.png" : "/light-logo.png"}`}
+        width={50}
+        height={50}
+        priority={true}
+        alt="logo"
+      />
+    </div>
+    <p className="w-full md:w-1/3 md:text-base text-sm order-2 md:order-none text-center">
+      <span>&#169;</span> Copyright 2024
+    </p>
+    <div className="w-full md:w-1/3 flex items-center justify-center gap-4 order-1 md:order-none">
+      <Link href={"https://www.linkedin.com/in/aditya-gupta128/"} target="_blank">
+        <i className="fa-lg fa-brands fa-linkedin"></i>
+      </Link>
+      <Link href={"https://github.com/Jakex-123"} target="_blank">
+        <i className="fa-lg fa-brands fa-github"></i>
+      </Link>
+      <Link href={"https://www.instagram.com/aditya.gupta03/"} target="_blank">
+        <i className="fa-lg fa-brands fa-instagram"></i>
+      </Link>
+      <Link target="_blank" href={"https://drive.google.com/file/d/1-gYPxNFrhdCqFDQQvN4J_Znwn8ZmUAZp/view?usp=drive_link"}>
+        <button className="px-4 h-7 border dark:border-white border-black rounded-full ">
+          Resume
+        </button>
+      </Link>
+    </div>
+  </footer>
+  </>
   );
 };
 

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/Context/ThemeProvider";
-import SmoothScrolling from "./lib/Scroll";
+import SmoothScrolling from "./utils/Scroll";
 import { GsapProvider } from "@/Context/GSAPContext";
 
 const inter = Inter({ subsets: ["latin"] });

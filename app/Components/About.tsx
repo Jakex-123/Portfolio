@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import { myInformation } from "../lib/myInformation";
+import { myInformation } from "../utils/myInformation";
 import { useGsap } from "@/Context/GSAPContext";
 
 
@@ -79,10 +79,10 @@ function About() {
         <h2 className="section-title text-3xl font-heading font-semibold md:text-5xl text-center about dark:text-primaryText text-lightPrimaryText">
           About Me
         </h2>
-        <span className="section-title block font-body font-thin text-lg md:text-[1.5rem] text-center leading-8 max-w-7xl dark:text-secondaryText text-lightSecondaryText">
+        <p className="section-title block font-body font-thin md:text-lg text-center max-w-7xl dark:text-secondaryText text-lightSecondaryText">
           Here you will find more information about me, what I do, and my
           current skills mostly in terms of programming and technology.
-        </span>
+        </p>
       </div>
       <div className="w-full flex flex-col gap-8 md:flex-row">
         <div className="md:w-[50%]" ref={knowMeRef}>
