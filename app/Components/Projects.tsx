@@ -95,8 +95,7 @@ const Projects = () => {
                   className={`mt-8 -mb-5 lg:mt-0 lg:mb-0 lg:absolute false lg:h-full lg:w-auto lg:max-w-none ${project.mobile && "w-[28%] -right-1 lg:-bottom-10 lg:w-auto lg:max-w-none mx-auto"} `}
                   src={project.image}
                   width={project.mobile?950:1920}
-                  height={project.mobile?1920:1080}
-                  quality={100}
+                  height={project.mobile?1920:1078}
                   alt="project-img"
                 />
               </div>
