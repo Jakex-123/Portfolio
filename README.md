@@ -19,7 +19,7 @@ This is a Next.js portfolio website built to showcase projects, skills and exper
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/portfolio.git
+   git clone https://github.com/Jakex-123/Portfolio.git
    ```
 2. **Navigate to the project directory:**
    ```bash
