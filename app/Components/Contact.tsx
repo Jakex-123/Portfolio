@@ -61,7 +61,7 @@ const Contact = () => {
     <>
     <section id="contact" className="mx-auto mt-24 md:mt-32 pb-10">
       <h2 className="font-heading text-3xl font-semibold md:text-5xl text-center about dark:text-primaryText text-lightPrimaryText">
-        Send Me a Message!
+        Send me a message!
       </h2>
       <p className="font-body font-thin text-center lg:text-xl max-w-[70%] md:max-w-[40%] mx-auto dark:text-secondaryText text-lightSecondaryText">
         Got a question or proposal, or just want to say hello? Go ahead.
