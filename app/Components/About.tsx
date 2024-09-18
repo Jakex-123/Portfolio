@@ -79,7 +79,7 @@ function About() {
         <h2 className="section-title text-3xl font-heading font-semibold md:text-5xl text-center about dark:text-primaryText text-lightPrimaryText">
           About Me
         </h2>
-        <p className="section-title block font-body font-thin md:text-lg text-center max-w-7xl dark:text-secondaryText text-lightSecondaryText">
+        <p className="section-title block font-body font-thin text-center lg:text-xl max-w-7xl mx-auto dark:text-secondaryText text-lightSecondaryText">
           Here you will find more information about me, what I do, and my
           current skills mostly in terms of programming and technology.
         </p>
