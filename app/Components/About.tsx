@@ -90,7 +90,7 @@ function About() {
             Get to know me!
           </h3>
           <p className="text-base font-body md:text-lg dark:text-secondaryText text-lightSecondaryText">
-            Hi, I’m Aditya Gupta, a passionate software developer with a knack
+            Hi, I’m a passionate software developer with a knack
             for solving complex problems and creating efficient, scalable
             solutions. I specialize in full-stack development. Whether it’s
             building interactive frontend interfaces or managing intricate
