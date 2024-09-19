@@ -4,6 +4,8 @@ import "./globals.css";
 import { ThemeProvider } from "@/Context/ThemeProvider";
 import SmoothScrolling from "./utils/Scroll";
 import { GsapProvider } from "@/Context/GSAPContext";
+import Script from "next/script";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -60,15 +62,20 @@ export default function RootLayout({
           src="https://kit.fontawesome.com/c8e316ce73.js"
           crossOrigin="anonymous"
         ></script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-VLSK264YKL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-VLSK264YKL');
-</script>
+        
       </head>
+      <Script id="next"
+                async
+                src={`https://www.googletagmanager.com/gtag/js?id=G-VLSK264YKL`}>
+            </Script>
+            <Script id="next">
+                {
+                    `window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-VLSK264YKL');`
+                }
+        </Script>
       <body
         className={`${inter.className} bg-lightPrimaryBg text-lightPrimaryText dark:bg-primaryBg dark:text-primaryText`}
       >
