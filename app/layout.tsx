@@ -54,6 +54,7 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="msapplication-config" content="/icons/browserconfig.xml" />
         <meta name="theme-color" content="#ffffff" />
+        <meta name="google-site-verification" content="XojKkMncD0mLRt_eNYxkb8RW4jinnyjXqJ2OyLXkTCs" />
         <script
           async
           src="https://kit.fontawesome.com/c8e316ce73.js"
