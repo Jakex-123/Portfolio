@@ -60,6 +60,14 @@ export default function RootLayout({
           src="https://kit.fontawesome.com/c8e316ce73.js"
           crossOrigin="anonymous"
         ></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-VLSK264YKL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VLSK264YKL');
+</script>
       </head>
       <body
         className={`${inter.className} bg-lightPrimaryBg text-lightPrimaryText dark:bg-primaryBg dark:text-primaryText`}
