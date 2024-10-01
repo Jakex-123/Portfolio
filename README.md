@@ -1,6 +1,6 @@
 ## Portfolio
 
-This is a Next.js portfolio website built to showcase projects, skills and experience. It leverages modern web technologies like:
+This is a portfolio website built to showcase projects, skills and experience. It leverages modern web technologies like:
 
 * **Next.js:** For server-side rendering and static site generation
 * **Tailwind CSS:** For styling the user interface
